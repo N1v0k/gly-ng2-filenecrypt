@@ -1,0 +1,25 @@
+<div>
+  Select file to encrypt:
+  <input type="file" (change)="encryptFile($event)">
+  Chunk size:
+  <input type="text" [(ngModel)]="chunkEncrypt">
+</div>
+
+<div>
+  Select file to decrypt:
+  <input type="file" (change)="decryptFile($event)">
+  Chunk size:
+  <input type="text" [(ngModel)]="chunkDecrypt">
+</div>
+
+<button (click)="downloadFile()">Download</button>
+<button (click)="getMD5()">Get MD5 of content</button> {{md5}}
+
+<hr>
+<div>
+  <ul>
+    <li *ngFor="let chunk of chunkedFile">
+      {{ chunk }} | {{chunk.length}}
+    </li>
+  </ul>
+</div>
