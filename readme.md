@@ -1,5 +1,5 @@
 # File encryption test
-[Read The Article](https://gerge.ly/2017/05/29/encrypt-files-with-angular2/)
+[Read The Article](https://gerge.ly/how-to-encrypt-files-client-side-using-angular2/)
 
 Testing how to encrypt a file locally with Angular2
 
